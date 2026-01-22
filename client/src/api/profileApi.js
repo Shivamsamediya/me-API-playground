@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API = "http://localhost:3000/api/profile";
+const backendAPI = "https://me-api-playground-new-eta.vercel.app/"
+const API =  backendAPI || "http://localhost:3000/api/profile";
 
 export const getProfile = () => axios.get(API);
 export const searchBySkill = (skill) =>
